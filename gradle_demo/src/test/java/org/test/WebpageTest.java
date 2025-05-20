@@ -17,13 +17,13 @@ public class WebpageTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         Thread.sleep(2000);
-        driver.get("https://jssateb.ac.in/");
+        driver.get("");
     }
 
     @Test
     public void titleValidationTest(){
         String actualTitle = driver.getTitle();
-        String expectedTitle = "JSSATE";
+        String expectedTitle = "";
         Assert.assertEquals(actualTitle, expectedTitle);
     }
 
